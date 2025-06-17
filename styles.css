@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f1e7;
+    color: #4a2c2a;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.chat-btn {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.recipe-btn {
+    background-color: #f4a261;
+    color: #fff;
+}
+
+.join-btn {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+}

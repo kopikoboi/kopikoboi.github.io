@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "name": "Kopi Hitam Sempurna",
+      "ingredients": ["Kopi Premium 20g", "Air 200ml", "Gula (opsional)"],
+      "instructions": "Seduh kopi dengan air panas 90°C selama 4 menit."
+    },
+    {
+      "name": "Latte Senja",
+      "ingredients": ["Kopi 15g", "Susu 100ml", "Busa Susu"],
+      "instructions": "Campur kopi dengan susu hangat, tambah busa di atas."
+    }
+  ],
+  "roasterInfo": {
+    "name": "Kopi Oppa Roaster",
+    "location": "Jakarta, Indonesia",
+    "since": 2020
+  }
+}

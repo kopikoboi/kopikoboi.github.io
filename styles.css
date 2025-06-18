@@ -40,6 +40,15 @@ nav a {
     background-color: #e76f51;
 }
 
+.reset-btn {
+    background-color: #e63946;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
 main {
     padding: 50px 20px;
 }

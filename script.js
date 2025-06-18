@@ -22,7 +22,7 @@ function loadRecipes() {
         const div = document.createElement('div');
         div.innerHTML = `
             <h3>${recipe.name}</h3>
-            <p><strong>Bahan:</strong> ${recipe.ingredients.join(', ')}</p>
+            <p><strong>Bahan:</strong> ${recipe.ingredients ? recipe.ingredients.join(', ') : 'Tidak ada bahan'}</p>
             <p><strong>Instruksi:</strong> ${recipe.instructions}</p>
         `;
         recipeList.appendChild(div);
@@ -38,8 +38,12 @@ function showRecipes() {
 // Add new recipe and store in localStorage
 function addRecipe() {
     const name = document.getElementById('recipe-name').value;
-    const ingredients = document.getElementById('recipe-instructions').value.split(',').map(item => item.trim()); // Misalnya input dipisah dengan koma
-    const instructions = document.getElementById('recipe-instructions').value.split('\n')[0]; // Ambil baris pertama sebagai instruksi
+    const ingredientsInput = document.getElementById('recipe-ingredients').value;
+    const instructions = document.getElementById('recipe-instructions').value;
+
+    // Process ingredients into an array, split by comma and trim whitespace
+    const ingredients = ingredientsInput.split(',').map(item => item.trim()).filter(item => item.length > 0);
+
     if (name && instructions && ingredients.length > 0) {
         const recipe = { name, ingredients, instructions };
         let recipes = JSON.parse(localStorage.getItem('recipes') || '[]');
@@ -55,7 +59,9 @@ function addRecipe() {
         `;
         recipeList.appendChild(div);
 
+        // Clear input fields
         document.getElementById('recipe-name').value = '';
+        document.getElementById('recipe-ingredients').value = '';
         document.getElementById('recipe-instructions').value = '';
     } else {
         alert('Mohon isi nama, bahan (pisah dengan koma), dan instruksi!');

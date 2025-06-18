@@ -27,12 +27,17 @@ nav a {
     text-decoration: none;
 }
 
-.chat-btn {
+.chat-btn, .recipe-btn, .join-btn {
     background-color: #f4a261;
     border: none;
     padding: 10px 20px;
     color: #fff;
     cursor: pointer;
+    margin: 5px;
+}
+
+.join-btn {
+    background-color: #e76f51;
 }
 
 main {
@@ -53,24 +58,52 @@ pre {
     text-align: left;
 }
 
-.buttons button {
-    margin: 10px;
-    padding: 10px 20px;
+.buttons {
+    margin: 20px 0;
+}
+
+.recipe-list {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-list div {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-recipe {
+    margin-top: 20px;
+}
+
+.add-recipe input {
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.add-recipe button {
+    background-color: #e76f51;
+    padding: 5px 10px;
+    color: #fff;
     border: none;
     cursor: pointer;
 }
 
-.recipe-btn {
-    background-color: #f4a261;
-    color: #fff;
-}
-
-.join-btn {
-    background-color: #e76f51;
+footer {
+    padding: 20px;
+    background-color: #333;
     color: #fff;
 }
 
 footer img {
     width: 100%;
     height: auto;
+    max-width: 300px;
+    margin-bottom: 10px;
 }

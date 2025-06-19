@@ -15,60 +15,85 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            font-size: 18px; /* Larger base font size */
+            line-height: 1.6;
         }
         header {
             background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 1.5rem;
+            padding: 2rem 1rem; /* Increased padding */
+        }
+        header h1 {
+            font-size: 2.5rem; /* Larger header font */
+            margin: 0.5rem 0;
+        }
+        header p {
+            font-size: 1.2rem; /* Larger subheader font */
+            margin: 0;
         }
         nav {
             background-color: #34495e;
-            padding: 1rem;
+            padding: 1rem 0;
         }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap; /* Allow nav items to wrap */
             justify-content: center;
+            gap: 1rem; /* Space between items */
         }
         nav ul li {
-            margin: 0 1rem;
+            margin: 0;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1rem; /* Larger nav font */
+            padding: 0.5rem 1rem;
+            display: block;
         }
         nav ul li a:hover {
             color: #3498db;
+            background-color: #2c3e50;
+            border-radius: 4px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px; /* Slightly wider container */
             margin: 2rem auto;
             padding: 0 1rem;
             flex: 1;
+            width: 100%;
+            box-sizing: border-box; /* Prevent overflow */
         }
         h2 {
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 2rem; /* Larger section title */
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 0 auto;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem; /* Larger table font */
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 0.8rem;
+            padding: 1rem; /* Increased padding */
             text-align: right;
         }
         th {
             background-color: #34495e;
             color: white;
+            font-size: 1.2rem; /* Slightly larger header font */
+        }
+        td {
+            font-size: 1.1rem; /* Consistent table cell font */
         }
         tr:nth-child(even) {
             background-color: #f9f9f9;
@@ -80,15 +105,61 @@
             background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1.5rem;
             width: 100%;
+            font-size: 1rem; /* Larger footer font */
         }
-        @media (max-width: 600px) {
-            table, th, td {
-                font-size: 0.9rem;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* Slightly smaller base font on tablets */
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            nav ul {
+                gap: 0.5rem; /* Reduced gap */
+                flex-direction: column; /* Stack nav items vertically */
+                align-items: center;
+            }
+            nav ul li a {
+                font-size: 1rem;
+                padding: 0.5rem;
             }
             .container {
                 padding: 0 0.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            table, th, td {
+                font-size: 1rem; /* Adjust table font for smaller screens */
+            }
+            th, td {
+                padding: 0.8rem; /* Slightly reduced padding */
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px; /* Smaller base font on mobile */
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            table, th, td {
+                font-size: 0.9rem;
+            }
+            th, td {
+                padding: 0.6rem; /* Further reduced padding */
             }
         }
     </style>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertumbuhan Modal - Kopioppa</title>
+    <style>
+        /* CSS Internal untuk Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            flex: 1;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: right;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            table, th, td {
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pertumbuhan Modal Harian</h1>
+        <p>Simulasi profit 3.53% per hari dari $6400 menjadi $12800 dalam 20 hari</p>
+    </header>
+    <div class="container">
+        <h2>Tabel Pertumbuhan Modal</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Modal Awal Hari ($)</th>
+                    <th>Profit Harian (3.53%) ($)</th>
+                    <th>Modal Akhir Hari ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>6400.00</td><td>225.92</td><td>6625.92</td></tr>
+                <tr><td>2</td><td>6625.92</td><td>233.89</td><td>6859.81</td></tr>
+                <tr><td>3</td><td>6859.81</td><td>242.00</td><td>7101.81</td></tr>
+                <tr><td>4</td><td>7101.81</td><td>250.66</td><td>7352.47</td></tr>
+                <tr><td>5</td><td>7352.47</td><td>259.46</td><td>7611.93</td></tr>
+                <tr><td>6</td><td>7611.93</td><td>268.58</td><td>7880.51</td></tr>
+                <tr><td>7</td><td>7880.51</td><td>278.02</td><td>8158.53</td></tr>
+                <tr><td>8</td><td>8158.53</td><td>287.98</td><td>8446.51</td></tr>
+                <tr><td>9</td><td>8446.51</td><td>298.16</td><td>8744.67</td></tr>
+                <tr><td>10</td><td>8744.67</td><td>308.69</td><td>9053.36</td></tr>
+                <tr><td>11</td><td>9053.36</td><td>319.58</td><td>9372.94</td></tr>
+                <tr><td>12</td><td>9372.94</td><td>330.70</td><td>9703.64</td></tr>
+                <tr><td>13</td><td>9703.64</td><td>342.54</td><td>10046.18</td></tr>
+                <tr><td>14</td><td>10046.18</td><td>354.63</td><td>10400.81</td></tr>
+                <tr><td>15</td><td>10400.81</td><td>367.15</td><td>10767.96</td></tr>
+                <tr><td>16</td><td>10767.96</td><td>380.10</td><td>11148.06</td></tr>
+                <tr><td>17</td><td>11148.06</td><td>393.44</td><td>11541.50</td></tr>
+                <tr><td>18</td><td>11541.50</td><td>407.41</td><td>11948.91</td></tr>
+                <tr><td>19</td><td>11948.91</td><td>421.60</td><td>12370.51</td></tr>
+                <tr><td>20</td><td>12370.51</td><td>436.68</td><td>12807.19</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>© 2025 Kopioppa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

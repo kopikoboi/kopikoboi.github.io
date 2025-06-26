@@ -63,14 +63,36 @@
         .investment li {
             margin: 5px 0;
         }
+
+        /* Tambahan untuk garis penghubung */
+        .connector {
+            position: relative;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .connector::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 50px;
+            background-color: #000;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>How Millionaires Make Money</h1>
         <div class="capital">
-            <div class="box" style="background-color: #90EE90;">Human Capital</div>
-            <div class="box" style="background-color: #87CEEB;">Assets Capital</div>
+            <div class="connector">
+                <div class="box" style="background-color: #90EE90;">Human Capital</div>
+            </div>
+            <div class="connector">
+                <div class="box" style="background-color: #87CEEB;">Assets Capital</div>
+            </div>
             <div class="box" style="background-color: #98FB98;">Cash Flow</div>
         </div>
         <div class="money-use">
@@ -80,7 +102,9 @@
             <div class="sub-box">INVEST IT (30%)<br>Every Single Month</div>
         </div>
         <div class="investment">
-            <div class="box" style="background-color: #90EE90;">Active Investing</div>
+            <div class="connector">
+                <div class="box" style="background-color: #90EE90;">Active Investing</div>
+            </div>
             <ul>
                 <li>Stocks</li>
                 <li>Real Estate</li>
@@ -88,7 +112,9 @@
                 <li>Crypto</li>
                 <li>Gold</li>
             </ul>
-            <div class="box" style="background-color: #FF69B4;">Passive Investing</div>
+            <div class="connector">
+                <div class="box" style="background-color: #FF69B4;">Passive Investing</div>
+            </div>
             <ul>
                 <li>Index Funds</li>
                 <li>ETFs</li>

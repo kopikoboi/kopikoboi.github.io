@@ -13,12 +13,10 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
-            position: relative;
         }
 
         .container {
             text-align: center;
-            position: relative;
         }
 
         h1 {
@@ -32,7 +30,6 @@
             margin: 10px;
             border: 2px solid #000;
             border-radius: 5px;
-            position: relative;
         }
 
         .capital .box {
@@ -55,7 +52,6 @@
         .investment {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
         }
 
         .investment ul {
@@ -66,29 +62,6 @@
 
         .investment li {
             margin: 5px 0;
-        }
-
-        /* Garis penghubung presisi */
-        .connector-line {
-            position: absolute;
-            background-color: #000;
-            z-index: 0;
-        }
-
-        /* Garis untuk Human Capital ke Active Investing */
-        .line1 {
-            width: 2px;
-            height: 100px; /* Sesuaikan panjang garis */
-            left: 45%; /* Sesuaikan posisi horizontal */
-            top: 120px; /* Sesuaikan posisi vertikal dari atas */
-        }
-
-        /* Garis untuk Assets Capital ke Passive Investing */
-        .line2 {
-            width: 2px;
-            height: 100px; /* Sesuaikan panjang garis */
-            left: 55%; /* Sesuaikan posisi horizontal */
-            top: 120px; /* Sesuaikan posisi vertikal dari atas */
         }
     </style>
 </head>
@@ -124,9 +97,6 @@
                 <li>EBITS</li>
             </ul>
         </div>
-        <!-- Garis penghubung -->
-        <div class="connector-line line1"></div>
-        <div class="connector-line line2"></div>
     </div>
 </body>
 </html>

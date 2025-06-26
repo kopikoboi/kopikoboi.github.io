@@ -13,10 +13,12 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            position: relative;
         }
 
         .container {
             text-align: center;
+            position: relative;
         }
 
         h1 {
@@ -30,6 +32,7 @@
             margin: 10px;
             border: 2px solid #000;
             border-radius: 5px;
+            position: relative;
         }
 
         .capital .box {
@@ -52,6 +55,7 @@
         .investment {
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
 
         .investment ul {
@@ -64,22 +68,27 @@
             margin: 5px 0;
         }
 
-        /* Tambahan untuk garis penghubung */
-        .connector {
-            position: relative;
-            display: inline-block;
-            margin: 0 10px;
+        /* Garis penghubung presisi */
+        .connector-line {
+            position: absolute;
+            background-color: #000;
+            z-index: 0;
         }
 
-        .connector::after {
-            content: '';
-            position: absolute;
+        /* Garis untuk Human Capital ke Active Investing */
+        .line1 {
             width: 2px;
-            height: 50px;
-            background-color: #000;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
+            height: 100px; /* Sesuaikan panjang garis */
+            left: 45%; /* Sesuaikan posisi horizontal */
+            top: 120px; /* Sesuaikan posisi vertikal dari atas */
+        }
+
+        /* Garis untuk Assets Capital ke Passive Investing */
+        .line2 {
+            width: 2px;
+            height: 100px; /* Sesuaikan panjang garis */
+            left: 55%; /* Sesuaikan posisi horizontal */
+            top: 120px; /* Sesuaikan posisi vertikal dari atas */
         }
     </style>
 </head>
@@ -87,12 +96,8 @@
     <div class="container">
         <h1>How Millionaires Make Money</h1>
         <div class="capital">
-            <div class="connector">
-                <div class="box" style="background-color: #90EE90;">Human Capital</div>
-            </div>
-            <div class="connector">
-                <div class="box" style="background-color: #87CEEB;">Assets Capital</div>
-            </div>
+            <div class="box" style="background-color: #90EE90;">Human Capital</div>
+            <div class="box" style="background-color: #87CEEB;">Assets Capital</div>
             <div class="box" style="background-color: #98FB98;">Cash Flow</div>
         </div>
         <div class="money-use">
@@ -102,9 +107,7 @@
             <div class="sub-box">INVEST IT (30%)<br>Every Single Month</div>
         </div>
         <div class="investment">
-            <div class="connector">
-                <div class="box" style="background-color: #90EE90;">Active Investing</div>
-            </div>
+            <div class="box" style="background-color: #90EE90;">Active Investing</div>
             <ul>
                 <li>Stocks</li>
                 <li>Real Estate</li>
@@ -112,9 +115,7 @@
                 <li>Crypto</li>
                 <li>Gold</li>
             </ul>
-            <div class="connector">
-                <div class="box" style="background-color: #FF69B4;">Passive Investing</div>
-            </div>
+            <div class="box" style="background-color: #FF69B4;">Passive Investing</div>
             <ul>
                 <li>Index Funds</li>
                 <li>ETFs</li>
@@ -123,6 +124,9 @@
                 <li>EBITS</li>
             </ul>
         </div>
+        <!-- Garis penghubung -->
+        <div class="connector-line line1"></div>
+        <div class="connector-line line2"></div>
     </div>
 </body>
 </html>
